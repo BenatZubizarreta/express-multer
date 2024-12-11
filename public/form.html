@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tittle</title>
 </head>
 <body>
-<form action="/profile" method="post" enctype="multipart/form-data">
-    <input type="file" name="avatar"/>
-    <input type="submit">
-</form>
+    <form action="/profile" method="post" enctype="multipart/form-data">
+        <label for="name">Zure izena:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <input type="file" id="avatar" name="avatar" required>
+        <br>
+        <input type="submit" value="Bidali">
+    </form>
 </body>
 </html>
